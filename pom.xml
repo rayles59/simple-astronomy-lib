@@ -7,7 +7,7 @@
     <groupId>com.bradsbrain</groupId>
     <artifactId>SimpleAstronomyLib</artifactId>
     <version>0.3.0-snapshot</version>
-
+    <url>http://maven.apache.org/</url>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
