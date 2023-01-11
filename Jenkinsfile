@@ -13,7 +13,6 @@ pipeline {
             steps {
                 bat 'mvn com.github.spotbugs:spotbugs-maven-plugin:3.1.7:spotbugs'
                 bat 'mvn pmd:pmd'
-
             }
         }
         stage('Upload Jar to Nexus') {
