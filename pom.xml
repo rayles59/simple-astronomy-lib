@@ -8,6 +8,7 @@
     <artifactId>SimpleAstronomyLib</artifactId>
     <version>1.0.0-snapshot</version>
     <url>http://maven.apache.org/</url>
+    <name>simple-astro</name>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
