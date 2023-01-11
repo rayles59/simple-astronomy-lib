@@ -1,8 +1,8 @@
 Groupe Jenkins: FONTAINE Matthieu BODDAERT Gauthier GOSSET Titouan VANDELANOITTE Arthur
 
-## Sujet: Simple Astronomy
+# Sujet: Simple Astronomy
 
-# Problèmes rencontrés:
+## Problèmes rencontrés:
 - mauvaise version de java => réinstaller une version compatible et changer les variables d'environnement
 - Rédaction jenkinsfile:
     - problème aux étapes clean & package dans Jenkins => changer sh -> bat
@@ -10,7 +10,7 @@ Groupe Jenkins: FONTAINE Matthieu BODDAERT Gauthier GOSSET Titouan VANDELANOITTE
     - problème pour configurer JUnit => doublon de version dans le plugin
 
 
-# Étapes réalisées:
+## Étapes réalisées:
 - fork du projet
 - git clone
 - mvn package dans le projet
@@ -30,6 +30,11 @@ Groupe Jenkins: FONTAINE Matthieu BODDAERT Gauthier GOSSET Titouan VANDELANOITTE
 - instance de serveur nexus OSS à localhost:8081
 - installation du plugin nexus dans Jenkins
 - ajout d'une étape Upload to nexus
+
+- Success build
+
+![image](./imagesMD/Nexus_Repo.png)
+
 - publication d'un package sur nexus
 
 ![image](./imagesMD/Nexus_Repo.png)
