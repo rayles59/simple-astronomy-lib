@@ -29,6 +29,9 @@ Groupe Jenkins: FONTAINE Matthieu BODDAERT Gauthier GOSSET Titouan VANDELANOITTE
 - installation de nexus
 - instance de serveur nexus OSS à localhost:8081
 - installation du plugin nexus dans Jenkins
+
+![image](./imagesMD/nexus_plugin.png)
+
 - ajout d'une étape Upload to nexus
 
 - Success build
@@ -39,3 +42,6 @@ Groupe Jenkins: FONTAINE Matthieu BODDAERT Gauthier GOSSET Titouan VANDELANOITTE
 
 ![image](./imagesMD/Nexus_Repo.png)
 
+- Essai docker
+    Jenkins fonctionnel sur Docker mais nous ne pouvons pas encore lancer de pipeline
+    JDK installé
