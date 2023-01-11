@@ -16,16 +16,11 @@ pipeline {
                
             }
         }
-        
-        
-        stage('Deploy') {
-            steps {
-                archiveArtifacts '/target/*.jar'
-            }
-        }
     }
+    
     post {
         always {
+            archiveArtifacts '/target/*.jar'
             junit '**/surefire-reports/*.xml'
         }
 
