@@ -33,7 +33,7 @@ Groupe Jenkins: FONTAINE Matthieu BODDAERT Gauthier GOSSET Titouan VANDELANOITTE
 
 - Success build
 
-![image](./imagesMD/Nexus_Repo.png)
+![image](./imagesMD/successBuild.png)
 
 - publication d'un package sur nexus
 
