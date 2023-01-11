@@ -2,37 +2,31 @@ pipeline {
     agent any
 
     stages {
-        stage('Package') {
+       stage('Build') {
             steps {
-            	sh 'mvn clean'
-                sh 'mvn package' 
-            }
+                bat 'mvn clean'
+                bat 'mvn package'
+                
+            } 
         }
         stage('Analyse') {
             steps {
-            	sh 'mvn checkstyle:checkstyle'
-                sh 'mvn spotbugs:spotbugs'
-                sh 'mvn pmd:pmd' 
+                bat 'mvn com.github.spotbugs:spotbugs-maven-plugin:3.1.7:spotbugs'
+                bat 'mvn pmd:pmd' 
+               
             }
         }
-        stage('Publish') {
+        
+        
+        stage('Deploy') {
             steps {
                 archiveArtifacts '/target/*.jar'
             }
         }
-        
     }
-    
     post {
         always {
             junit '**/surefire-reports/*.xml'
-            
-			recordIssues enabledForFailure: true, tools: [mavenConsole(), java(), javaDoc()]
-            recordIssues enabledForFailure: true, tool: checkStyle()
-            recordIssues enabledForFailure: true, tool: spotBugs()
-            recordIssues enabledForFailure: true, tool: cpd(pattern: '**/target/cpd.xml')
-            recordIssues enabledForFailure: true, tool: pmdParser(pattern: '**/target/pmd.xml')
-            
         }
 
     }
