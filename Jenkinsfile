@@ -22,7 +22,7 @@ pipeline {
                         [
                             artifactId: 'SimpleAstronomyLib',
                             classifier: '',
-                            file: 'target/*-snapshot.jar',
+                            file: 'target/SimpleAstronomyLib-1.1.0-snapshot.jar',
                             type: 'jar'
                         ]
                             ],
