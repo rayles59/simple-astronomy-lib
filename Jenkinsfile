@@ -22,7 +22,7 @@ pipeline {
                         [
                             artifactId: 'SimpleAstronomyLib',
                             classifier: '',
-                            file: 'target/SimpleAstronomyLib-1.1.0-snapshot.jar',
+                            file: 'target/SimpleAstronomyLib-1.1.1-snapshot.jar',
                             type: 'jar'
                         ]
                             ],
@@ -32,7 +32,7 @@ pipeline {
                             nexusVersion: 'nexus3',
                             protocol: 'http',
                             repository: 'http://localhost:8081/repository/Simple-Astro/',
-                            version: '1.1.0-snapshot'
+                            version: '1.1.1-snapshot'
 
 
             }
